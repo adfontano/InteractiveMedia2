@@ -1,0 +1,166 @@
+/* ----------- general ------------- */
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+a, p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #32021F;
+}
+h2 {
+    font-family: "Mynerve", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #653E4D;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+h1 {
+    font-family: "Mynerve", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #653E4D;
+    font-size: 55px;
+    margin-bottom: 0;
+    margin-left: 50px;
+}
+body {
+    background-color:  #9EB5B0;
+    max-height: 800px;
+}
+/* ------------- header --------------  */
+header {
+    background-image: url(images/torn-paper-1.png);
+    background-repeat: no-repeat;
+    padding: 40px;
+    position: relative;
+    top: -50px;
+    right: 10px;
+}
+header h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #281822;
+    margin-top: 0;
+    font-size: 20px;
+    margin-left: 50px;
+}
+/* -------------- main --------------- */
+main {
+    width: 80%;
+    margin: auto;
+}
+ul {
+    line-height: 2.25em;
+    margin-top: 0;
+}
+#all-sections {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+#top-section {
+    background-image: url(images/tape-paper-2.png);
+    background-repeat: no-repeat;
+    background-size: 275px;
+    padding: 70px;
+}
+section h2, section ul {
+    position: relative;
+    right: 25px;
+    bottom: 15px;
+    margin-bottom: 0;
+}
+#bottom-section {
+    background-image: url(images/tape-paper-3.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    padding: 70px;
+}
+#column-2 {
+    background-image: url(images/tape-paper.png);
+    background-repeat: no-repeat;
+    background-size: 325px 575px;
+    padding: 70px;
+    position: relative;
+    bottom: 15px;
+}
+#column-2 section {
+    padding-top: 15px;
+}
+/* ------------ footer ------------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-image: url(images/tape.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center;
+}
+img {
+    display: block;
+    position: absolute;
+    
+}
+#one {
+    top: 80%;
+    left: 8%;
+    animation: spin 5s infinite;
+}
+#two {
+    top: 65%;
+    left: 2%;
+    animation: spin 5s infinite;
+    animation-play-state: paused;
+}
+#two:hover {
+    animation-play-state: running;
+}
+#three {
+    top: 40%;
+    left: 10%;
+    animation: spin 5s infinite;
+}
+#four {
+    top: 95%;
+    left: 70%;
+    animation: spin 5s infinite;
+    animation-play-state: paused;
+}
+#four:hover {
+    animation-play-state: running;
+}
+#five {
+    top: 80%;
+    left: 85%;
+    animation: spin 5s infinite;
+}
+#six {
+    top: 65%;
+    left: 80%;
+    animation: spin 5s infinite;
+    animation-play-state: paused;
+}
+#six:hover {
+    animation-play-state: running;
+}
+#seven {
+    top: 25%;
+    left: 76%;
+    animation: spin 5s infinite;
+}
+
+@keyframes spin {
+    30% {
+        transform: rotate(35deg);
+    }
+    80% {
+        transform: rotate(-35deg);
+    }
+}
