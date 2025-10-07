@@ -11,6 +11,9 @@ a, p {
     font-style: normal;
     color: #32021F;
 }
+li a:hover {
+    color: #90119E;
+}
 h2 {
     font-family: "Mynerve", cursive;
     font-weight: 400;
