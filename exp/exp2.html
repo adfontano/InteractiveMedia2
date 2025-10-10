@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+
+    <style>
+        body {
+            margin: 0 auto;
+            width: 50%;
+            text-align: center;
+            align-content: center;
+        }
+        div {
+            padding: 50px;
+        }
+        .green {
+            background-color: rgb(157, 228, 137);
+        }
+        .red {
+            background-color: rgb(239, 76, 76);
+        }
+    </style>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+
+    <div>
+        <p>Pick a color!</p>
+    </div>
+
+    <script>
+        // The a color is selected for the computer randomly out of an array and the user is asked to pick a color from the rainbow. If they match the box turns green and says you got it right, if not it turns red and says you got it wrong.
+        function computerColor(){
+            var myColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigio', 'purple'];
+            var pickedColor = myColors[randomInt(0,6)]; 
+            console.log(pickedColor);
+            return pickedColor;
+        }
+
+        function randomInt( min, max ){
+            return Math.floor( (max - min + 1)* Math.random()) + min;
+        }
+
+        function checkColor(){
+            var userColor = prompt("What color of the rainbow am I thinking of?", "");
+            var theDiv = document.querySelector('div');
+          
+            if(userColor == computerColor()){
+                theDiv.innerHTML = "<p>You got it right!</p>";
+                theDiv.className = "green"
+            } else {
+                theDiv.innerHTML = "<p>You got it wrong!</p>";
+                theDiv.className = "red"
+            }
+
+        } 
+
+        checkColor();
+    </script>
+</body>
+</html>
