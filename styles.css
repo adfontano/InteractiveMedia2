@@ -34,6 +34,8 @@ h1 {
 body {
     background-color:  #9EB5B0;
     max-height: 800px;
+    max-width: 1200px;
+    margin: auto;
 }
 /* ------------- header --------------  */
 header {
@@ -72,6 +74,9 @@ ul {
     background-repeat: no-repeat;
     background-size: 275px;
     padding: 70px;
+}
+#top-section h2 {
+    margin-top: 0;
 }
 section h2, section ul {
     position: relative;

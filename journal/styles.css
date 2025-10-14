@@ -1,0 +1,43 @@
+body {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #EDECE8;
+}
+h1 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100px;
+    text-align: center;
+}
+h1, h2, p, a {
+    color: #11272C;
+}
+article {
+    max-width: 60%;
+    margin: auto;
+}
+h2 {
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1.5px solid #11272C;
+    padding-bottom: 15px;
+    width: 50%;
+    margin: auto;
+}
+p, a {
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5em;
+    padding-top: 15px;
+}
+img {
+    display: block;
+    margin: auto;
+}
