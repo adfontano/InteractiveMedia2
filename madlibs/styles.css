@@ -1,0 +1,63 @@
+#madlib-questions {
+    display: block;
+    width: 600px;
+    margin: auto;
+    
+}
+
+#madlib-output {
+    display: none;
+}
+main {
+    background-image: url(images/book.png);
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 900px;
+    margin: auto;
+}
+h1 {
+    font-family: "Pirata One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150px;
+    text-align: center;
+    padding-top: 2%;
+    margin-bottom: 0;
+    margin: auto;
+}
+h2 {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin: auto;
+}
+p {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+form {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    width: min-content;
+    margin: auto;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+}
+input, button {
+    width: 150px;
+    margin: 10px;
+}
+label {
+    padding: 10px;
+}
