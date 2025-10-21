@@ -1,19 +1,22 @@
 #madlib-questions {
-    display: block;
+    display: none;
     width: 600px;
     margin: auto;
-    
 }
-
 #madlib-output {
-    display: none;
+    display: block;
+}
+body {
+    background: #183A37;
+    background: radial-gradient(circle,rgba(24, 58, 55, 1) 0%, rgba(18, 19, 18, 1) 100%);
 }
 main {
     background-image: url(images/book.png);
     background-repeat: no-repeat;
-    height: 800px;
+    height: 700px;
     width: 900px;
     margin: auto;
+    margin-top: 5%;
 }
 h1 {
     font-family: "Pirata One", serif;
@@ -22,23 +25,37 @@ h1 {
     font-size: 150px;
     text-align: center;
     padding-top: 2%;
+    padding-left: 28px;
     margin-bottom: 0;
     margin: auto;
+    color: #8e402e;
 }
 h2 {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
     font-weight: 600;
-    font-style: normal;
+    font-style: italic;
     margin: auto;
+    color: #8e402e;
 }
 p {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 450;
+    color: #230903;
 }
 
+#madlib-output {
+    width: 450px;
+    margin: auto;
+    line-height: 1.5em;
+    font-size: 18px;
+    font-style: normal;
+}
+span {
+    font-style: italic;
+}
+/*--------- form styling ------------ */
 form {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
@@ -49,15 +66,40 @@ form {
     flex-direction: row;
     width: min-content;
     margin: auto;
+    color: #230903;
+    margin-top: 16px;
 }
 form div {
     display: flex;
     flex-direction: column;
 }
+#right-form {
+    padding-left: 80px;
+}
 input, button {
     width: 150px;
     margin: 10px;
+    background-color: #eee4d3;
+    border:1px solid #8e402e;
+}
+button {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 18px;
+    align-self: flex-end;
+    transition: all .5s ease;
+}
+button:hover {
+    background-color: #8e402e;
+    color: #eee4d3;
+}
+input {
+    padding-left: 10px;
+    border-radius: 10px;
 }
 label {
-    padding: 10px;
+    padding: 8px;
+    padding-bottom: 0;
+    font-size: 18px;
 }
