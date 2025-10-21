@@ -1,10 +1,10 @@
 #madlib-questions {
-    display: none;
+    display: block;
     width: 600px;
     margin: auto;
 }
 #madlib-output {
-    display: block;
+    display: none;
 }
 body {
     background: #183A37;
@@ -32,7 +32,6 @@ h1 {
 }
 h2 {
     font-family: "EB Garamond", serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: italic;
     margin: auto;
@@ -40,7 +39,6 @@ h2 {
 }
 p {
     font-family: "EB Garamond", serif;
-    font-optical-sizing: auto;
     font-weight: 450;
     color: #230903;
 }
@@ -58,7 +56,6 @@ span {
 /*--------- form styling ------------ */
 form {
     font-family: "EB Garamond", serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     max-width: 600px;
