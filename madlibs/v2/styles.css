@@ -1,0 +1,147 @@
+#madlib-questions {
+    display: block;
+    width: 600px;
+    margin: auto;
+}
+#madlib-output {
+    display: none;
+}
+body {
+    background: #183A37;
+    background: radial-gradient(circle,rgba(24, 58, 55, 1) 0%, rgba(18, 19, 18, 1) 100%);
+}
+main {
+    background-image: url(../images/book.png);
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 900px;
+    margin: auto;
+    margin-top: 5%;
+}
+h1 {
+    font-family: "Pirata One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150px;
+    text-align: center;
+    padding-top: 2%;
+    padding-left: 28px;
+    margin-bottom: 0;
+    margin: auto;
+    color: #8e402e;
+}
+h2 {
+    font-family: "EB Garamond", serif;
+    font-weight: 600;
+    font-style: italic;
+    margin: auto;
+    color: #8e402e;
+}
+#madlib-output h2 {
+    justify-self: flex-end;
+    padding-left: 160px;
+}
+p {
+    font-family: "EB Garamond", serif;
+    font-weight: 450;
+    color: #230903;
+}
+
+#madlib-output {
+    margin: auto;
+    margin-right: 8%;
+    line-height: 1.5em;
+    font-size: 16px;
+    font-style: normal;
+    width: 700px;
+}
+#photo-and-writing {
+    display: flex;
+}
+#madlib-writing {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+}
+span {
+    font-weight: 700;
+}
+/*--------- form styling ------------ */
+form {
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    width: min-content;
+    margin: auto;
+    color: #230903;
+    margin-top: 16px;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+}
+#right-form {
+    padding-left: 80px;
+}
+input, button {
+    width: 150px;
+    margin: 10px;
+    background-color: #eee4d3;
+    border:1px solid #8e402e;
+}
+#errorMessage {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 0;
+    color: #8e402e;
+    align-self: end;
+    padding-right: 20px;
+    width: max-content;
+}
+button {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 18px;
+    align-self: flex-end;
+    transition: all .5s ease;
+}
+button:hover {
+    background-color: #8e402e;
+    color: #eee4d3;
+}
+input {
+    padding-left: 10px;
+    border-radius: 10px;
+}
+label {
+    padding: 8px;
+    padding-bottom: 0;
+    font-size: 18px;
+}
+/* ------ animations ---------- */
+@keyframes shake {
+    0%{ transform: translate(1px, 0px);}
+    15%{ transform: translate(-1px, 0px);}
+    30%{ transform: translate(2px, 0px);}
+    45%{ transform: translate(-2px, 0px);}
+    60%{ transform: translate(1px, 0px);}
+    75%{ transform: translate(-1px, 0px);}
+    90%{ transform: translate(0px, 0px);}
+}
+@keyframes change-opacity {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.button-animation {
+    animation: shake .5s;
+    animation-iteration-count: 1;
+}
+.fade {
+    animation: change-opacity 2.5s;
+    animation-iteration-count: 1;
+}

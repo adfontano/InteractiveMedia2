@@ -11,7 +11,7 @@ body {
     background: radial-gradient(circle,rgba(24, 58, 55, 1) 0%, rgba(18, 19, 18, 1) 100%);
 }
 main {
-    background-image: url(images/book.png);
+    background-image: url(../images/book.png);
     background-repeat: no-repeat;
     height: 700px;
     width: 900px;
@@ -44,11 +44,13 @@ p {
 }
 
 #madlib-output {
-    width: 450px;
+    width: 300px;
     margin: auto;
+    margin-right: 10%;
     line-height: 1.5em;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
+
 }
 span {
     font-style: italic;
