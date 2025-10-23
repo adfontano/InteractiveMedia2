@@ -25,35 +25,41 @@
         if(noun1 == ''){
             errorMessage = '*Please enter a noun';
             button.classList.add('button-animation');
+            document.querySelector('#noun').focus();
             button.addEventListener('animationend', function(){
                 button.classList.remove('button-animation');
             });
         } else if(name == ''){
             errorMessage = '*Please enter a name';
             button.classList.add('button-animation');
+            document.querySelector('#name').focus();
             button.addEventListener('animationend', function(){
                 button.classList.remove('button-animation');
             });
         } else if(adjective1 == ''){
             errorMessage = '*Please enter an adjective';
+            document.querySelector('#adjective').focus();
             button.classList.add('button-animation');
             button.addEventListener('animationend', function(){
                 button.classList.remove('button-animation');
             });
         } else if(adjective2 == ''){
             errorMessage = '*Please enter another adjective';
+            document.querySelector('#adjective2').focus();
             button.classList.add('button-animation');
             button.addEventListener('animationend', function(){
                 button.classList.remove('button-animation');
             });
         } else if(verb1 == ''){
             errorMessage = '*Please enter a verb';
+            document.querySelector('#verb').focus();
             button.classList.add('button-animation');
             button.addEventListener('animationend', function(){
                 button.classList.remove('button-animation');
             });
         } else if(verb2 == ''){
             errorMessage = '*Please enter another verb';
+            document.querySelector('#verb2').focus();
             button.classList.add('button-animation');
             button.addEventListener('animationend', function(){
                 button.classList.remove('button-animation');
@@ -61,12 +67,14 @@
         } else if(adverb == ''){
             errorMessage = '*Please enter an adverb';
             button.classList.add('button-animation');
+            document.querySelector('#adverb').focus();
             button.addEventListener('animationend', function(){
                 button.classList.remove('button-animation');
             });
         } else if(exclamation == ''){
             errorMessage = '*Please enter an exclamation';
             button.classList.add('button-animation');
+            document.querySelector('#exclamation').focus();
             button.addEventListener('animationend', function(){
                 button.classList.remove('button-animation');
             });
