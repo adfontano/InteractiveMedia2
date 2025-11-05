@@ -1,0 +1,22 @@
+body {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #EDECE8;
+}
+h1 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100px;
+    text-align: center;
+    color: #11272C;
+}
+img {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+div {
+    display: flex;
+}
