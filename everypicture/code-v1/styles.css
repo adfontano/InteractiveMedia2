@@ -16,6 +16,9 @@ h1 {
     font-weight: 300;
     text-align: center;
 }
+h1:hover {
+    color: red;
+}
 img {
     display: block;
     width: 200px;
