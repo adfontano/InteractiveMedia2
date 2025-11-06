@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+}
+main {
+    background-image: url(images/bedroom-edited.jpg);
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 750px;
+    margin: auto;
+    position: relative;
+}
+h1 {
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+}
+img {
+    display: block;
+    width: 200px;
+    position: absolute;
+}
+#speech-bubbles{
+    display: block;
+}
+#speech-bubbles img {
+    width: 300px;
+}
+#cat {
+    right: 60px;
+    bottom: 70px;
+    width: 250px;
+}
+#docs {
+    bottom: 0;
+    left: 250px;
+    width: 120px;
+}
+#sketchbook {
+    bottom: 150px;
+    right: 400px;
+    width: 160px;
+}
+#switch {
+    bottom: 160px;
+    left: 170px;
+    width: 150px;
+}
+#bubble-1 {
+    bottom: 250px;
+    right: 400px;
+}
+#bubble-2 {
+    bottom: 250px;
+}
+#bubble-3{
+    bottom: 100px;
+    right: 450px;
+}
+#bubble-4 {
+    bottom: 220px;
+    right: 100px;
+}
