@@ -14,7 +14,11 @@ h1 {
     font-weight: 400;
     font-style: normal;
     color: white;
+    font-size: 40px;
     text-align: center;
+    cursor: default;
+    width: max-content;
+    margin:auto;
 }
 h1:hover {
     color: red;
@@ -23,9 +27,6 @@ img {
     display: block;
     width: 200px;
     position: absolute;
-}
-#speech-bubbles img {
-    width: 300px;
 }
 #cat {
     right: 60px;
@@ -63,26 +64,46 @@ img {
 #switch:hover {
     transform: translate(0px, -10px);
 }
+#speech-bubbles div{
+    background-color: white;
+    border-radius: 40px;
+    padding: 10px 40px;
+    position: absolute;
+    font-family: "Just Me Again Down Here", cursive;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 25px;
+}
 #bubble-1 {
     bottom: 250px;
-    right: 400px;
-    display: none;
+    left: 45px;
+    display: none;   
 }
 #bubble-2 {
-    bottom: 250px;
-    display: none;
+    left: 150px;
+    bottom: 150px; 
+    display: none;   
 }
 #bubble-3{
-    bottom: 100px;
-    right: 450px;
-    display: none;
+    right: 340px;
+    bottom: 270px;
+    display: none;   
 }
 #bubble-4 {
-    bottom: 220px;
-    right: 100px;
-    display: none;
+    bottom: 230px;
+    right: 65px;
+    display: none;   
 }
 #overlay{
     width: 1000px;
     display: none;
+    opacity: 0;
+}
+.fade-in {
+    animation: change-opacity 2.5s;
+}
+
+@keyframes change-opacity {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
