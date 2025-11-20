@@ -5,7 +5,7 @@ main {
     background-image: url(images/bedroom-edited.jpg);
     background-repeat: no-repeat;
     width: 1000px;
-    height: 750px;
+    height: 580px;
     margin: auto;
     position: relative;
 }
@@ -14,7 +14,7 @@ h1 {
     font-weight: 400;
     font-style: normal;
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     cursor: default;
     width: max-content;
