@@ -1,0 +1,135 @@
+body {
+    background-color: #FFE8E8;
+    background-image: url(images/stripes.jpg);
+    background-size: auto;
+}
+/* staring page */
+#intro {
+    display: flex;
+    /* display: flex; */
+    align-items: center;
+    background-image: url(images/kitchen.JPG);
+    width: 1200px;
+    height: 700px;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding-left: 100px;
+}
+#title-buttons {
+    display: flex;
+}
+#title-buttons h3 {
+    margin: 10px;
+    background-image: url(images/button.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 75px;
+    width: 260px;
+    align-content: center;
+}
+/* gameplay */
+#play-area {
+    display: none;
+}
+#kitchen {
+    background-image: url(images/kitchen-crop.JPG);
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    background-repeat: no-repeat;
+    margin: auto;
+    
+}
+#kitchen img {
+    position: absolute;
+}
+h1, h2, h3, p {
+    font-family: "Averia Sans Libre", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+h2 {
+    font-size: 70px;
+    margin-bottom: 0;
+    color: #50140B;
+    margin-top: 10px;
+}
+h3 {
+    font-size: 40px;
+    margin: 0;
+    color: #FFF7EC;
+}
+p {
+    font-size: 25px;
+    color: #50140B;
+}
+#actions {
+    background-image: url(images/button.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60px;
+    width: 200px;
+    align-content: center;
+    margin-top: 10px;
+}
+#gamecontrol {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+}
+#scoreArea {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 35px;
+    background-color: #C8967E;
+    width: 1200px;
+}
+#actionsStyle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#playerOne {
+    margin-right: 15px;
+}
+#playerTwe {
+    margin-left: 15px;
+}
+#tools {
+    display: flex;
+    align-items: self-end;
+    background-color: #C8967E;
+    padding-right: 10px;
+}
+#tools p {
+    padding: 0px 20px 0px 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+    border-color: #50140B;
+    margin-left: 10px;
+    font-size: 15px;
+}
+/* gifs */
+#lilaSleeping {
+    bottom: 22.7%;
+    right: 25%;
+    
+}
+#lilaCooking {
+    bottom: 7.4%;
+    right: 25%;
+    display: none;
+}
+#mariReading {
+    bottom: -2%;
+    left: 5%;
+    display: none;
+}
+#mariCooking {
+    bottom: 7.3%;
+    left: 8%;
+    
+}
