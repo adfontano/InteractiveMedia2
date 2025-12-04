@@ -19,8 +19,8 @@
         block: 'start'
     });
     const gameData = {
-        dice: ['one.png', 'two.png', 'three.png', 
-            'four.png', 'five.png', 'six.png'],
+        dice: ['one.PNG', 'two.PNG', 'three.PNG', 
+            'four.PNG', 'five.PNG', 'six.PNG'],
         players: ['Mari', 'Lila'],
         score: [0, 0],
         roll1: 0,
