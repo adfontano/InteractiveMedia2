@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@400;700&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Game On</title>
+</head>
+<body>
+    <div id="intro">
+        <img id="intro-image" src="images/intro-image.PNG" width="500">
+        <div id="title-info">
+            <img src="images/logo.PNG" width="550">
+            <div id="title-buttons">
+                <h3 id="startgame">Start Game</h3>
+                <h3 class="rules">Rules</h3>
+            </div>
+        </div>
+    </div>
+    <div id="play-area">
+        <div id="kitchen">
+            <img id="mariCooking" src="images/mariCooking.GIF" width="300">
+            <img id="mariReading" src="images/mariReading.GIF" width="360">
+            <img id="lilaCooking" src="images/lilaCooking.GIF" width="410">
+            <img id="lilaSleeping" src="images/lilaSleeping.GIF" width="370">
+        </div>
+        <div id="gamecontrol"> 
+            <p id="playerTurn"></p> 
+            <div>
+                <div id="scoreArea">
+                    <div id="playerOne">
+                        <h2 id="scoreOne">0</h2>
+                        <p>Mari's Score</p>
+                    </div>
+                    <div id="actionsStyle">
+                        <div id="dice">
+                            <img src="images/one.PNG" width="150">
+                            <img src="images/two.PNG" width="150">
+                        </div>  
+                        <div id="actions">
+                            <h3 id="roll">Roll!</h3>
+                        </div>
+                    </div>
+                    <div id="playerTwo">
+                        <h2 id="scoreTwo">0</h2>
+                        <p>Lila's Score</p>
+                    </div>
+                </div>
+                <p id="game"></p>
+            </div>
+            <div id="tools">
+                <p id="quit">Quit</p>
+                <p class="rules">Rules</p>
+            </div>
+        </div>
+    </div>
+    <div id="howPlay">
+        <div>
+            <img id="closeRules" src="images/xButton.png" width="60">
+            <h3>How to Play</h3>
+        </div>
+        <p>Mari works at a bakery and bakes every cake to perfection, recently her new coworker Lila has been assigned to help her bake customer cakes. Lila hates following every little instruction the customers left and thinks they'll enjoy any cake she bakes for them. Mari's goal is to bake the perfect cake before Lila can get her hands on it while Lila's goal is to bake her cake before Mari can take over.</p>
+        <p>Player one will play as Mari and player two will play as Lila. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, the player loses the points they earned that turn, and it is the other player’s turn. If a player rolls two ones (snake eyes) their score is reset to 0. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p>
+    </div>
+    <div id="winner">
+        <div id="cake"></div>
+        <h2 id="whoWon"></h2>
+        <h3 id="startOver">Play Again</h3>
+    </div>
+</body>
+</html>

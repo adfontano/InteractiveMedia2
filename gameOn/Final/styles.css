@@ -1,12 +1,13 @@
 body {
     background-color: #FFE8E8;
     background-image: url(images/stripes.jpg);
-    background-size: auto;
+    padding: 0;
+    margin: 0;
+    cursor: default !important;
 }
 /* staring page */
 #intro {
-    display: none;
-    /* display: flex; */
+    display: flex;
     align-items: center;
     background-image: url(images/kitchen.JPG);
     width: 1200px;
@@ -29,13 +30,15 @@ body {
 }
 /* gameplay */
 #play-area {
-    /* display: none; */
-}
+    margin-top: 100%;
+} 
 #kitchen {
     background-image: url(images/kitchen-crop.JPG);
     position: relative;
-    width: 1200px;
-    height: 600px;
+    /* width: 1200px;
+    height: 600px; */
+    width: 1100px;
+    height: 570px;
     background-repeat: no-repeat;
     margin: auto;
     
@@ -65,6 +68,9 @@ p {
     color: #50140B;
 }
 #actions {
+    display: flex;
+}
+#roll, #rollAgain {
     background-image: url(images/button.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -72,19 +78,39 @@ p {
     width: 200px;
     align-content: center;
     margin-top: 10px;
+    margin-right: 5px;
+}
+#pass {
+    background-image: url(images/button.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60px;
+    width: 200px;
+    align-content: center;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 #gamecontrol {
     display: flex;
-    width: 1200px;
+    width: 1100px;
     margin: auto;
+    padding-top: 15px;
+    background-color: #C8967E;
     flex-direction: column;
+}
+#game {
+    font-size: 16px;
+}
+#playerTurn {
+    color: #50140B;
+    padding-bottom: 10px;
+    margin: 0;
 }
 #scoreArea {
     display: flex;
     margin: auto;
     justify-content: center;
-    background-color: #C8967E;
-    width: 1200px;
+    width: 1100px;
 }
 #actionsStyle{
     display: flex;
@@ -122,8 +148,11 @@ p {
     width: 600px;
     border-radius: 40px;
     padding: 20px;
-    top: 25%;
-    left: 25%;
+    left: 0; 
+    right: 0; 
+    top: 15%;
+    margin-inline: auto; 
+    
     border: #aa4a48;
     border-style: solid;
     border-width: 10px;
@@ -144,22 +173,66 @@ p {
 }
 /* gifs */
 #lilaSleeping {
-    bottom: 22.7%;
+    bottom: 20.2%;
     right: 25%;
     
 }
 #lilaCooking {
-    bottom: 7.4%;
+    bottom: 8.8%;
     right: 25%;
-    display: none;
+    
 }
 #mariReading {
     bottom: -2%;
     left: 5%;
-    display: none;
+    
 }
 #mariCooking {
     bottom: 7.3%;
     left: 8%;
     
+}
+
+/* outro */
+#winner {
+    margin: auto;
+    margin-top: 250%;
+    margin-bottom: 300px;
+    background-color: #FFE8E8;
+    border-radius: 64px;
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    border-color: #aa4a48;
+    border-style: solid;
+    border-width: 7px;
+}
+#whoWon {
+    color: #aa4a48;
+}
+#startOver {
+    font-size: 30px;
+    margin: 10px;
+    background-image: url(images/button.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 55px;
+    width: 200px;
+    align-content: center;
+}
+
+/* animation */
+.spin {
+    animation: spin 1s;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Start at 0 degrees rotation */
+  }
+  100% {
+    transform: rotate(360deg); /* End at 360 degrees rotation for a full circle */
+  }
 }
