@@ -31,6 +31,8 @@ body {
 /* gameplay */
 #play-area {
     margin-top: 100%;
+    display: none;
+    margin-bottom: 10%;
 } 
 #kitchen {
     background-image: url(images/kitchen-crop.JPG);
@@ -46,7 +48,7 @@ body {
 #kitchen img {
     position: absolute;
 }
-h1, h2, h3, p {
+h1, h2, h3, p, a{
     font-family: "Averia Sans Libre", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -63,7 +65,7 @@ h3 {
     margin: 0;
     color: #FFF7EC;
 }
-p {
+p, a {
     font-size: 25px;
     color: #50140B;
 }
@@ -195,12 +197,12 @@ p {
 
 /* outro */
 #winner {
+    display: none;
     margin: auto;
     margin-top: 250%;
     margin-bottom: 300px;
     background-color: #FFE8E8;
     border-radius: 64px;
-    display: flex;
     width: 1000px;
     justify-content: center;
     padding: 50px;

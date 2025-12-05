@@ -12,12 +12,10 @@
     const rollButton = document.querySelector('#roll');
     const winner = document.querySelector('#winner');
     const whoWon = document.querySelector('#whoWon');
-    const winCake = ['mari-cake.png', 'lila-cake.png'];
+    const winCake = ['mari-cake.PNG', 'lila-cake.PNG'];
+    const clickSound = new Audio('sounds/button-21.mp3');
+    const errorSound = new Audio('sounds/button-22.mp3');
 
-    intro.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-    });
     const gameData = {
         dice: ['one.PNG', 'two.PNG', 'three.PNG', 
             'four.PNG', 'five.PNG', 'six.PNG'],
@@ -30,14 +28,42 @@
         index: 0,
         gameEnd: 29
     };
-
-    startGame.addEventListener('click', function(){ //add transition??
-        /* intro.style.display = 'none';
-        playArea.style.display = 'inline'; */
+    function playAreaScroll(){
         playArea.scrollIntoView({
             behavior: 'smooth',
             block: 'center'
         });
+    }
+    function winnerScroll(){
+        winner.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+    function introScroll(){
+        intro.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+    function removeIntro(){
+        intro.style.display = 'none';
+    }
+    function removePlayArea(){
+        playArea.style.display = 'none';
+    }
+    function removeWinner(){
+        winner.style.display = 'none';
+    }
+
+    introScroll();
+
+    startGame.addEventListener('click', function(){ //add transition??
+        /* intro.style.display = 'none';
+        playArea.style.display = 'inline'; */
+        playArea.style.display = 'block';
+        setTimeout(playAreaScroll, 250);
+        setTimeout(removeIntro, 1500);
         
         document.querySelector('#quit').addEventListener('click', function(){
             location.reload();
@@ -92,6 +118,8 @@
 
         //if statements 
         if(gameData.rollSum === 2){
+            errorSound.currentTime = 0;
+            errorSound.play();
             game.innerHTML += 'Snake Eyes! Score Reset!';
             gameData.score[gameData.index] = 0;
             if (gameData.index == 1) {
@@ -104,6 +132,8 @@
             showCurrentScore();
         } 
         else if(gameData.roll1 === 1 || gameData.roll2 === 1){
+            errorSound.currentTime = 0;
+            errorSound.play();
             gameData.score[gameData.index] = gameData.score[gameData.index] - gameData.turnRollSum;
             gameData.turnRollSum = 0;
              if (gameData.index == 1) {
@@ -117,6 +147,8 @@
             showCurrentScore();
         }
         else {
+            clickSound.currentTime = 0;
+            clickSound.play();
             gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
             gameData.turnRollSum = gameData.turnRollSum + gameData.rollSum;
             rollButton.style.display = 'none'
@@ -142,19 +174,17 @@
         if(gameData.score[gameData.index] > gameData.gameEnd){
             document.querySelector('#cake').innerHTML = `<img src="images/${winCake[gameData.index]}" width="500">`;
             whoWon.innerHTML = `${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!`;
-            winner.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+            winner.style.display = 'flex'
+            setTimeout(winnerScroll, 500);
+            setTimeout(removePlayArea, 1500);
             document.querySelector('#startOver').addEventListener('click', function(){ //reset score here
                 gameData.score[0] = 0;
                 gameData.score[1] = 0;
                 scoreOne.innerHTML = `${gameData.score[0]}`;
                 scoreTwo.innerHTML = `${gameData.score[1]}`;
-                intro.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+                intro.style.display = 'flex';
+                setTimeout(introScroll, 500);
+                setTimeout(removeWinner, 1500);
                 
             });
         } else {
